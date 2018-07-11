@@ -45,6 +45,12 @@ a {
     color: black;
 }
 
+p {
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 15px;
+}
+
 textarea:focus {
     background: dimgray;
 }
@@ -103,6 +109,26 @@ textarea:focus {
 
 .main-content {
     margin: 0 auto;
+}
+
+.one {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 5px;
+}
+
+.two {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 2px;
 }
 
 .main-footer li {
