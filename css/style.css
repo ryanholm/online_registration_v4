@@ -10,7 +10,7 @@
 body {
     margin: 0;
     padding: 0;
-    text-align: center;
+    /*text-align: center;*/
 }
 
 
@@ -176,8 +176,13 @@ select {
     margin: 0 0 30px;
 }
 
+label {
+    text-align: left;
+    color: gray;
+    margin-bottom: 10px;
+}
 
-
+/*Left off with figuring out the margin-bottom for labels*/
 
 ul.move {
     padding-right: 37px;
@@ -198,145 +203,10 @@ ul.move {
 
 @media screen and (min-width: 768px){
 
-    .main-nav {
-        height: 350px;
-    }
 
-    .main-nav li {
-        float: left;
-    }
-
-    .name {
-        float: left;
-        width: 100%;
-    }
-
-    .main-nav ul li {
-        padding-right: 30px;
-    }
-
-    li.name {
-        padding-right: 2px;
-    }
-
-    .nav li a {
-        display: block;
-        position: relative;
-        left: 200px;
-        padding: 5px;
-        margin: 1px;
-        background-color: gray;
-    }
-
-    .profile-face img {
-        position: relative;
-        top: 1px;
-        right: 3px;
-        float: right;
-        max-width: 250px;
-        margin-right: 2%;
-    }
-
-    .intro-text {
-        position: relative;
-        top: 0;
-        left: 5px;
-    }
-
-    .intro-text p {
-        width: 60%;
-        font-size: 19px;
-    }
-
-    .col {
-        display: inline-block;
-        padding: 1%;
-    }
-
-    .portfolio-piece {
-        width: 42%;
-        margin: 2%;
-    }
-
-    .portfolio-piece h1 {
-        font-size: 20px;
-    }
-
-    .portfolio-piece p {
-        font-size: 13px;
-    }
-
-    .mobile-hide {
-        display: block;
-    }
-
-    .student li {
-        display: block;
-        float: left;
-        margin: 1px;
-        padding: 1px;
-        text-decoration: none;
-        list-style-type: none;
-        border-top: solid #c0c4c6;
-        padding-top: 20px;
-    }
-
-    .student li a {
-        padding-left: 30px;
-    }
-
-    li.nameme {
-        padding-right: 290px;
-    }
-
-    .tablet-hide {
-        display: none;
-    }
-}
 
 @media screen and (min-width: 1024px){
 
-    .name {
-        position: absolute;
-        right: 375px;
-        padding: 0px;
-        margin: 0px;
-    }
-
-    .nav li a {
-        left: 650px;
-    }
-
-    .intro-text p {
-        text-align: left;
-    }
-
-    .main-content {
-        width: 90%;
-    }
-
-    .col {
-        width: 28%;
-    }
-
-    .portfolio-piece {
-        vertical-align: top;
-        max-width: 1125px;
-    }
-
-    .profile-face img {
-        max-width: 300px;
-    }
-
-    .student li a {
-        padding-left: 30px;
-    }
-
-    li.nameme {
-        padding-right: 500px;
-    }
-
-}
 
 
 
