@@ -10,7 +10,6 @@
 body {
     margin: 0;
     padding: 0;
-    /*text-align: center;*/
 }
 
 
@@ -107,13 +106,12 @@ textarea:focus {
     text-align: left;
 }
 
-.main-content {
-    margin: 0 auto;
-}
+
 
 .message {
     margin-top: 2px;
     opacity: 0.5;
+    text-align: center;
 }
 
 .one {
@@ -166,23 +164,38 @@ textarea,
 select {
     border: none;
     font-size: 16px;
-    height: auto;
+    height: 45px;
     outline: 0;
-    padding: 15px;
     width: 100%;
     background: #e8eeef;
     color: #8a97a0;
     box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-    margin: 0 0 30px;
+    margin: 8px 0px 30px;
 }
 
-label {
-    text-align: left;
-    color: gray;
-    margin-bottom: 10px;
+.fieldset {
+    border: none;
 }
 
-/*Left off with figuring out the margin-bottom for labels*/
+label[for="full"],
+label[for="email"],
+label[for="telNo"],
+label[for="address"],
+label[for="city"],
+label[for="state"],
+label[for="zipcode"] {
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+
+/*stuck figuring out how to space label text*/
+
+#HTML_News, #CSS_News, #JavaScript_News {
+    position: relative;
+    top: 20px;
+}
+
+
 
 ul.move {
     padding-right: 37px;
