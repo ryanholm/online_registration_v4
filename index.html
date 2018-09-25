@@ -21,7 +21,6 @@
       <hr class="two">
 
       <h1 class="contact">Contact Information</h1>
-      <!-- left off with left-align on contact information -->
 
       <fieldset class="fieldset">
         <label for="full">Full Name</label>
@@ -40,8 +39,8 @@
         <input type="text" id="city" name="user_city">
 
         <label for="state">State</label>
-        <select id="state" name="user_state">
-            <option value="State">
+        <select id="state" name="user_state" required >
+            <option value="State" hidden>Choose State</option>
               <option value="AL" label="Alabama">Albama</option>
               <option value="AK" label="Alaska">Alaska</option>
               <option value="AZ" label="Arizona">Arizona</option>
@@ -97,18 +96,22 @@
           <label for="zipcode">Zip Code</label>
           <input type="zipcode" id="zipcode" name="user_zipcode">
 
+        <hr class="three">
+
         <h1>Newsletter</h1>
         <p>Select the newsletters you would like to receive</p>
-          <input type="checkbox" id="HTML_News" value="receive_html" name="user_interest" title="HTML News"><label class="light" for="HTML">HTML News</label><br>
-          <input type="checkbox" id="CSS_News" value="receive_css" name="user_interest" title="HTML News"><label class="light" for="CSS_News">CSS News</label><br>
-          <input type="checkbox" id="JavaScript_News" value="receive_javascript" name="user_interest" title="HTML News"><label class="light" for="JavaScript_News">JavaScript News</label><br>
+          <div class="checkbox">
+              <label><input type="checkbox" id="HTML_News" value="receive_html" name="user_interest" title="HTML News"> HTML News</label>
+              <label><input type="checkbox" id="CSS_News" value="receive_css" name="user_interest" title="HTML News"> CSS News</label>
+              <label><input type="checkbox" id="JavaScript_News" value="receive_javascript" name="user_interest" title="HTML News"> JavaScript News</label>
 
-        <p>Newsletter Format</p>
-          <input type="radio" id="html" name="contact" value="html"><label for="html">HTML</label>
-          <input type="radio" id="plain text" name="contact" value="plain text"><label for="plain text">Plain Text</label>
+              <p>Newsletter Format</p>
+              <label><input type="radio" id="html" name="contact" value="html"> HTML</label>
+              <label><input type="radio" id="plain text" name="contact" value="plain text"> Plain Text</label>
 
-        <p>Other topic you'd like to hear about</p>
-        <textarea id="topics" name="user_topics" title="Independant text from customer"></textarea>
+              <p>Other topic you'd like to hear about</p>
+              <textarea id="topics" name="user_topics" title="Independant text from customer"></textarea>
+          </div>
 
       </fieldset>
 
