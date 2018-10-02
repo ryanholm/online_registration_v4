@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en-US">
+<head>
     <meta charset="UTF-8">
     <title>Custom Form for Treehouse Project three_Ryan Holm</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
@@ -13,7 +13,6 @@
 
   <body>
   <!--Figuring out how to remove the header from the body to have a width of 100% @768-->
-    <div>
         <div>
             <form action="index.html" method="post">
               <h1 class="main clearfix">The Code Review</h1>
@@ -44,8 +43,8 @@
                     </div>
 
                     <div class="form-control">
-                        <label for="telNo">Phone Number</label>
-                        <input id="telNo" type="telNo" name="user_tel">
+                        <label for="tel">Phone Number</label>
+                        <input id="tel" type="tel" name="user_tel">
                     </div>
 
                     <div class="form-control">
@@ -61,7 +60,7 @@
                     <div class="form-control">
                         <label for="state">State</label>
                         <select id="state" name="user_state" required >
-                        <option value="State" hidden>Choose State</option>
+                        <option value="State" size="50" hidden>Choose State</option>
                           <option value="AL" label="Alabama">Albama</option>
                           <option value="AK" label="Alaska">Alaska</option>
                           <option value="AZ" label="Arizona">Arizona</option>
@@ -117,7 +116,7 @@
 
                     <div class="form-control">
                       <label for="zipcode">Zip Code</label>
-                      <input type="zipcode" id="zipcode" name="user_zipcode">
+                      <input type="text" pattern="[0-9]{5}" id="zipcode" title="five digits" name="user_zipcode">
                     </div>
                 </div>
               </fieldset>
@@ -147,7 +146,7 @@
                   </div>
 
                   <div class="form-control">
-                      <label><input type="radio" id="plain text" name="contact" value="plain text"> Plain Text</label>
+                      <label><input type="radio" id="plain_text" name="contact" value="plain text"> Plain Text</label>
                   </div>
 
               </div>

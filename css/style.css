@@ -86,7 +86,7 @@ p {
 
 input[type="text"],
 input[type="email"],
-input[type="telNo"],
+input[type="tel"],
 input[type="text"],
 input[type="text"],
 input[type="state"],
@@ -109,7 +109,7 @@ select {
 
 label[for="full"],
 label[for="email"],
-label[for="telNo"],
+label[for="tel"],
 label[for="address"],
 label[for="city"],
 label[for="state"],
@@ -231,11 +231,11 @@ h4 {
 
     input[type="text"],
     input[type="email"],
-    input[type="telNo"],
+    input[type="tel"],
     input[type="text"],
     input[type="text"],
     input[type="state"],
-    input[type="zipcode"],
+    input[type="text"],
     select {
         border: none;
         font-size: 16px;
@@ -248,13 +248,13 @@ h4 {
         width: 435px;
     }
 
-    input[type="zipcode"] {
+   #zipcode {
         width: 150px;
     }
 
     label[for="full"],
     label[for="email"],
-    label[for="telNo"],
+    label[for="tel"],
     label[for="address"],
     label[for="city"],
     label[for="state"],
@@ -283,7 +283,11 @@ h4 {
 }
 
 
+/*
+Things to complete:
+Add :focus states to the form for when a user clicks or tabs into a text field.
 
+*/
 
 
 
