@@ -8,8 +8,9 @@
 }
 
 body {
-    margin: 0px;
-    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 768px;
 }
 
 p {
@@ -103,6 +104,10 @@ select {
     margin: 8px 0px 30px;
 }
 
+input:focus, textarea:focus, select:focus {
+    background: ghostwhite;
+}
+
 .fieldset {
     border: none;
 }
@@ -175,10 +180,6 @@ textarea {
     margin-right: 15px;
     margin-bottom: 15px;
     background: #e8eeef;
-}
-
-textarea:focus {
-    background: ghostwhite;
 }
 
 button {
@@ -262,6 +263,12 @@ h4 {
         display: inline-block;
         width: 140px;
         text-align: left;
+    }
+
+    label[for="topics"] {
+        display: inline-block;
+        text-align: left;
+        margin-left: 90px;
     }
 
     textarea {
