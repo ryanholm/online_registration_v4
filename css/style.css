@@ -108,7 +108,7 @@ input:focus, textarea:focus, select:focus {
     background: ghostwhite;
 }
 
-.fieldset {
+.fieldset, .fieldsettwo {
     border: none;
 }
 
@@ -165,8 +165,12 @@ label, input {
     margin-left: 15px;
 }
 
-h1, p {
+legend, p {
     margin-left: 15px;
+}
+
+legend {
+    font-size: 24px;
 }
 
 textarea {
@@ -228,6 +232,10 @@ h4 {
 
     .one, .two, .three {
         width: 95%;
+    }
+
+    .three {
+        margin-bottom: 20px; 
     }
 
     input[type="text"],

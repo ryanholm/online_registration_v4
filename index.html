@@ -14,9 +14,8 @@
   <body>
   <!--Figuring out how to remove the header from the body to have a width of 100% @768-->
         <div>
-            <form action="index.html" method="post">
-              <h1 class="main clearfix">The Code Review</h1>
-            </form>
+
+            <h1 class="main clearfix">The Code Review</h1>
 
             <h1 class="second">Signup for our newsletter</h1>
             <p class="message">Get the latest news on how your code is doing right in your inbox</p>
@@ -28,138 +27,148 @@
             <hr class="one">
             <hr class="two">
 
-            <h1 class="contact">Contact Information</h1>
+        <form action="index.html" method="post">
 
-              <fieldset class="fieldset">
-                <div>
-                   <div class="form-control">
-                       <label for="full">Full Name</label>
-                       <input type="text" id="full" name="user_name" placeholder="required  " required>
-                   </div>
+            <legend class="contact">Contact Information</legend>
 
-                    <div class="form-control">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="user_email" placeholder="required  " required>
+                  <fieldset class="fieldset">
+                    <div>
+                        <div class="form-control">
+                           <label for="full">Full Name</label>
+                           <input type="text" id="full" name="user_name" placeholder="required  " required>
+                        </div>
+
+                        <div class="form-control">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="user_email" placeholder="required  " required>
+                        </div>
+
+                        <div class="form-control">
+                            <label for="tel">Phone Number</label>
+                            <input id="tel" type="tel" name="user_tel">
+                        </div>
+
+                        <div class="form-control">
+                            <label for="address">Address</label>
+                            <input type="text" id="address" name="user_address">
+                        </div>
+
+                        <div class="form-control">
+                            <label for="city">City</label>
+                            <input type="text" id="city" name="user_city">
+                        </div>
+
+                        <div class="form-control">
+                            <label for="state">State</label>
+                            <select id="state" name="user_state" required >
+                            <option value="" hidden>Choose State</option>
+                              <option value="AL" label="Alabama">Albama</option>
+                              <option value="AK" label="Alaska">Alaska</option>
+                              <option value="AZ" label="Arizona">Arizona</option>
+                              <option value="AR" label="Arkansas">Arkansas</option>
+                              <option value="CA" label="California">California</option>
+                              <option value="CO" label="Colorado">Colorado</option>
+                              <option value="CT" label="Connecticut">Connecticut</option>
+                              <option value="DE" label="Delaware">Delaware</option>
+                              <option value="FL" label="Florida">Florida</option>
+                              <option value="GA" label="Georgia">Georgia</option>
+                              <option value="HI" label="Hawaii">Hawaii</option>
+                              <option value="ID" label="Idaho">Idaho</option>
+                              <option value="IL" label="Illinois">Illinois</option>
+                              <option value="IN" label="Indiana">Indiana</option>
+                              <option value="IA" label="Iowa">Iowa</option>
+                              <option value="KS" label="Kansas">Kansas</option>
+                              <option value="KY" label="Kentucky">Kentucky</option>
+                              <option value="LA" label="Louisiana">Louisiana</option>
+                              <option value="ME" label="Maine">Maine</option>
+                              <option value="MD" label="Maryland">Maryland</option>
+                              <option value="MA" label="Massachusetts">Massachusetts</option>
+                              <option value="MI" label="Michigan">Michigan</option>
+                              <option value="MN" label="Minnesota">Minnesota</option>
+                              <option value="MS" label="Mississippi">Mississippi</option>
+                              <option value="MO" label="Missouri">Missouri</option>
+                              <option value="MT" label="Montana">Montana</option>
+                              <option value="NE" label="Nebraska">Nebraska</option>
+                              <option value="NV" label="Nevada">Nevada</option>
+                              <option value="NH" label="New Hampshire">New Hampshire</option>
+                              <option value="NJ" label="New Jersey">New Jersey</option>
+                              <option value="NM" label="New Mexico">New Mexico</option>
+                              <option value="NY" label="New York">New York</option>
+                              <option value="NC" label="North Carolina">North Carolina</option>
+                              <option value="ND" label="North Dakota">North Dakota</option>
+                              <option value="OH" label="Ohio">Ohio</option>
+                              <option value="OK" label="Oklahoma">Oklahoma</option>
+                              <option value="OR" label="Oregon">Oregon</option>
+                              <option value="PA" label="Pennsylvania">Pennsylvania</option>
+                              <option value="RI" label="Rhode Island">Rhode Island</option>
+                              <option value="SC" label="South Carolina">South Carolina</option>
+                              <option value="SD" label="South Dakota">South Dakota</option>
+                              <option value="TN" label="Tennessee">Tennnesse</option>
+                              <option value="TX" label="Texas">Texas</option>
+                              <option value="UT" label="Utah">Utah</option>
+                              <option value="VT" label="Vermont">Vermont</option>
+                              <option value="VA" label="Virginia">Virginia</option>
+                              <option value="WA" label="Washington">Washington</option>
+                              <option value="WV" label="West Virginia">West Virginia</option>
+                              <option value="WI" label="Wisconsin">Wisconsin</option>
+                              <option value="WY" label="Wyoming">Wyoming</option>
+                            </select>
+                        </div>
+
+                        <div class="form-control">
+                          <label for="zipcode">Zip Code</label>
+                          <input type="text" pattern="[0-9]{5}" id="zipcode" title="five digits" name="user_zipcode">
+                        </div>
                     </div>
 
-                    <div class="form-control">
-                        <label for="tel">Phone Number</label>
-                        <input id="tel" type="tel" name="user_tel">
-                    </div>
+                  </fieldset>
 
-                    <div class="form-control">
-                        <label for="address">Address</label>
-                        <input type="text" id="address" name="user_address">
-                    </div>
+                <hr class="three">
 
-                    <div class="form-control">
-                        <label for="city">City</label>
-                        <input type="text" id="city" name="user_city">
-                    </div>
+                <fieldset class="fieldsettwo">
 
-                    <div class="form-control">
-                        <label for="state">State</label>
-                        <select id="state" name="user_state" required >
-                        <option value="" hidden>Choose State</option>
-                          <option value="AL" label="Alabama">Albama</option>
-                          <option value="AK" label="Alaska">Alaska</option>
-                          <option value="AZ" label="Arizona">Arizona</option>
-                          <option value="AR" label="Arkansas">Arkansas</option>
-                          <option value="CA" label="California">California</option>
-                          <option value="CO" label="Colorado">Colorado</option>
-                          <option value="CT" label="Connecticut">Connecticut</option>
-                          <option value="DE" label="Delaware">Delaware</option>
-                          <option value="FL" label="Florida">Florida</option>
-                          <option value="GA" label="Georgia">Georgia</option>
-                          <option value="HI" label="Hawaii">Hawaii</option>
-                          <option value="ID" label="Idaho">Idaho</option>
-                          <option value="IL" label="Illinois">Illinois</option>
-                          <option value="IN" label="Indiana">Indiana</option>
-                          <option value="IA" label="Iowa">Iowa</option>
-                          <option value="KS" label="Kansas">Kansas</option>
-                          <option value="KY" label="Kentucky">Kentucky</option>
-                          <option value="LA" label="Louisiana">Louisiana</option>
-                          <option value="ME" label="Maine">Maine</option>
-                          <option value="MD" label="Maryland">Maryland</option>
-                          <option value="MA" label="Massachusetts">Massachusetts</option>
-                          <option value="MI" label="Michigan">Michigan</option>
-                          <option value="MN" label="Minnesota">Minnesota</option>
-                          <option value="MS" label="Mississippi">Mississippi</option>
-                          <option value="MO" label="Missouri">Missouri</option>
-                          <option value="MT" label="Montana">Montana</option>
-                          <option value="NE" label="Nebraska">Nebraska</option>
-                          <option value="NV" label="Nevada">Nevada</option>
-                          <option value="NH" label="New Hampshire">New Hampshire</option>
-                          <option value="NJ" label="New Jersey">New Jersey</option>
-                          <option value="NM" label="New Mexico">New Mexico</option>
-                          <option value="NY" label="New York">New York</option>
-                          <option value="NC" label="North Carolina">North Carolina</option>
-                          <option value="ND" label="North Dakota">North Dakota</option>
-                          <option value="OH" label="Ohio">Ohio</option>
-                          <option value="OK" label="Oklahoma">Oklahoma</option>
-                          <option value="OR" label="Oregon">Oregon</option>
-                          <option value="PA" label="Pennsylvania">Pennsylvania</option>
-                          <option value="RI" label="Rhode Island">Rhode Island</option>
-                          <option value="SC" label="South Carolina">South Carolina</option>
-                          <option value="SD" label="South Dakota">South Dakota</option>
-                          <option value="TN" label="Tennessee">Tennnesse</option>
-                          <option value="TX" label="Texas">Texas</option>
-                          <option value="UT" label="Utah">Utah</option>
-                          <option value="VT" label="Vermont">Vermont</option>
-                          <option value="VA" label="Virginia">Virginia</option>
-                          <option value="WA" label="Washington">Washington</option>
-                          <option value="WV" label="West Virginia">West Virginia</option>
-                          <option value="WI" label="Wisconsin">Wisconsin</option>
-                          <option value="WY" label="Wyoming">Wyoming</option>
-                        </select>
-                    </div>
+                    <legend>Newsletter</legend>
+                    <p>Select the newsletters you would like to receive</p>
 
-                    <div class="form-control">
-                      <label for="zipcode">Zip Code</label>
-                      <input type="text" pattern="[0-9]{5}" id="zipcode" title="five digits" name="user_zipcode">
-                    </div>
-                </div>
-              </fieldset>
+                      <div class="checkbox">
+                          <div class="form-control">
+                              <label><input type="checkbox" id="HTML_News" value="receive_html" name="user_interest" title="HTML News"> HTML News</label>
+                          </div>
 
-            <hr class="three">
+                          <div class="form-control">
+                              <label><input type="checkbox" id="CSS_News" value="receive_css" name="user_interest" title="HTML News"> CSS News</label>
+                          </div>
 
-            <h1>Newsletter</h1>
-            <p>Select the newsletters you would like to receive</p>
+                          <div class="form-control">
+                              <label><input type="checkbox" id="JavaScript_News" value="receive_javascript" name="user_interest" title="HTML News"> JavaScript News</label>
+                          </div>
 
-              <div class="checkbox">
-                  <div class="form-control">
-                      <label><input type="checkbox" id="HTML_News" value="receive_html" name="user_interest" title="HTML News"> HTML News</label>
-                  </div>
+                          <p>Newsletter Format</p>
 
-                  <div class="form-control">
-                      <label><input type="checkbox" id="CSS_News" value="receive_css" name="user_interest" title="HTML News"> CSS News</label>
-                  </div>
+                          <div class="form-control">
+                              <label><input type="radio" id="html" name="contact" value="html"> HTML</label>
+                          </div>
 
-                  <div class="form-control">
-                      <label><input type="checkbox" id="JavaScript_News" value="receive_javascript" name="user_interest" title="HTML News"> JavaScript News</label>
-                  </div>
+                          <div class="form-control">
+                              <label><input type="radio" id="plain_text" name="contact" value="plain text"> Plain Text</label>
+                          </div>
 
-                  <p>Newsletter Format</p>
+                      </div>
 
-                  <div class="form-control">
-                      <label><input type="radio" id="html" name="contact" value="html"> HTML</label>
-                  </div>
 
-                  <div class="form-control">
-                      <label><input type="radio" id="plain_text" name="contact" value="plain text"> Plain Text</label>
-                  </div>
+                        <div class="textarea">
+                            <label for="topics">Other topic you'd like to hear about</label>
+                            <textarea id="topics" name="user_topics" title="Independant text from customer"></textarea>
+                            <button type="submit">Sign Up</button>
+                        </div>
 
-              </div>
+                </fieldset>
+
+                    <h4>Copyright &#174; The Code Review</h4>
+
+            </form>
 
         </div>
-
-            <div class="textarea">
-                <label for="topics">Other topic you'd like to hear about</label>
-                <textarea id="topics" name="user_topics" title="Independant text from customer"></textarea>
-                <button type="submit">Sign Up</button>
-            </div>
-
-        <h4>Copyright &#174; The Code Review</h4>
 
   </body>
 <!--end main-content-->
